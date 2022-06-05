@@ -16,7 +16,7 @@ const refs = {
 let query = '';
 let page = 1;
 let simpleLightBox;
-const perPage = 40;
+const perPage = 20;
 
 refs.form.addEventListener('submit', onSearch);
 refs.loadMoreBtn.addEventListener('click', onLoadMore);
