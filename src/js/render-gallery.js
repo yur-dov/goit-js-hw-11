@@ -2,7 +2,6 @@ export { renderGallery };
 const refs = {
   gallery: document.querySelector('.gallery'),
 };
-
 function renderGallery(images) {
   const murkup = images
     .map(image => {
