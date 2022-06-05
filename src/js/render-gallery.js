@@ -1,13 +1,13 @@
 export { renderGallery };
 const refs = {
-    gallery: document.querySelector('.gallery'),
+  gallery: document.querySelector('.gallery'),
 };
 
 function renderGallery(images) {
-    const murkup = images
-        .map(image => {
-            const { largeImageURL, webformatURL, tags, likes, views, comments, downloads } = image;
-            return `<a class="gallery__link" href="${largeImageURL}">
+  const murkup = images
+    .map(image => {
+      const { largeImageURL, webformatURL, tags, likes, views, comments, downloads } = image;
+      return `<a class="gallery__link" href="${largeImageURL}">
           <div class="gallery-item">
             <img class="gallery-item__img" src="${webformatURL}" alt="${tags}" loading="lazy" />
             <div class="info">
@@ -18,6 +18,6 @@ function renderGallery(images) {
             </div>
           </div>
         </a>`;
-        }).join('');
-    refs.gallery.insertAdjacentHTML('beforeend', murkup);
+    }).join('');
+  refs.gallery.insertAdjacentHTML('beforeend', murkup);
 };

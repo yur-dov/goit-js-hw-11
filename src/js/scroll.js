@@ -20,12 +20,3 @@ function onTotopBtn() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 };
-
-const { height: cardHeight } = document
-    .querySelector(".gallery")
-    .firstElementChild.getBoundingClientRect();
-
-window.scrollBy({
-    top: cardHeight * 2,
-    behavior: "smooth",
-});
